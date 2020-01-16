@@ -5,7 +5,8 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
-
+const weatherWidget = require('./weather-widget/events')
+weatherWidget.createHandlers()
 $(() => {
   // your JS code goes here
 })

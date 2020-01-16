@@ -28,9 +28,16 @@
   }
 }
 .weather-widget__image {
-  background: #e78e97;
+  background-image: url('public/background.png');
+  background-size: cover;
+  background-position: center bottom;
   flex-grow: 1;
   max-width: 38%;
+}
+@media (max-width: 768px) {
+  .weather-widget__image {
+    display: none;
+  }
 }
 .weather-widget__background {
   background: #2b3646;
