@@ -1,6 +1,6 @@
 const requestWeather = ({ city, country }) => {
   return $.ajax({
-    url: `api.openweathermap.org/data/2.5/weather?q=London`
+    url: `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}`
   })
 }
 module.exports = {
