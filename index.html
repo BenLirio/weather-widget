@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Do not add `link` tags-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Do not add `script` tags-->
+    <script
+      src="public/vendor.js"
+      type="text/javascript"
+      charset="utf-8"
+      defer
+    ></script>
+    <script
+      src="public/application.js"
+      type="text/javascript"
+      charset="utf-8"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="background container-fluid">
+      <div class="weather-widget col-12 col-sm-12 col-md-11 col-lg-10 col-xl-8">
+        <div class="weather-widget__image"></div>
+        <div class="weather-widget__background">
+          <div class="item top-spacing"></div>
+          <div class="item form-container">
+            <form id="get-weather-form">
+              <input class="text-input" type="text" placeholder="City" />
+              <input class="text-input" type="text" placeholder="Country" />
+              <input
+                class="get-weather-btn"
+                type="submit"
+                value="Get Weather"
+              />
+            </form>
+          </div>
+          <div class="item location data-container">
+            <p>Location: <span class="data-value">manchester, GB</span class="data-value"></p>
+          </div>
+          <div class="item temperature data-container">
+            <p>Temperature: <span class="data-value">0.27</span></p>
+          </div>
+          <div class="item humidity data-container">
+            <p>Humidity: <span class="data-value">93%</span></p>
+          </div>
+          <div class="item conditions data-container">
+            <p>Conditions: <span class="data-value">mist</span></p>
+          </div>
+          <div class="item bottom-spacing"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

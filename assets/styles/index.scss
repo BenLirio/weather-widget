@@ -1,0 +1,80 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+.background {
+  background: #c86c3e;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-widget {
+  background: #2b3646;
+  height: 400px;
+  box-shadow: 3px 3px 17px 5px rgba(0, 0, 0, 0.38);
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .weather-widget {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .weather-widget {
+    height: 500px;
+  }
+}
+.weather-widget__image {
+  background: #e78e97;
+  flex-grow: 1;
+  max-width: 38%;
+}
+.weather-widget__background {
+  background: #2b3646;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 35px;
+}
+.item {
+  flex-grow: 1;
+}
+.get-weather-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background: #d05352;
+  border: none;
+  padding: 5px;
+  color: #eee;
+}
+.text-input {
+  background: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  border: none;
+  color: #eee;
+  border-bottom: 1px solid #d05352;
+  margin: 20px;
+  width: 120px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #d05352;
+  margin: 0;
+}
+.data-container {
+  border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+}
+.data-value {
+  color: #eee;
+}
